@@ -1,0 +1,33 @@
+.section {
+
+  &-title {
+    font: 700 48px/59px 'Montserrat';
+    text-transform: uppercase;
+    color: #5c25c5;
+    padding-bottom: 40px;
+  }
+
+  &-purple {
+    background-image: url("/background/purple.png");
+    background-size: 100% 100%;
+    padding: 100px 0 150px;
+  }
+
+  &-container {
+    max-width: 1310px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &-articles {
+    padding: 50px 0 60px
+  }
+  &-desc{
+    font: 400 17px/21px 'Montserrat';
+    color: #1F074D;
+    padding-bottom: 20px;
+  }
+  &-adults{
+    padding: 90px 0 0;
+  }
+}
