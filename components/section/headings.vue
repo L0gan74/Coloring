@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-interface IHeading {
+type IHeading = {
   id: number
   img: string
   name: string,

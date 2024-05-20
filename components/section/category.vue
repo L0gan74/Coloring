@@ -5,19 +5,33 @@ import ColoringItem from "~/components/item/coloring-item.vue";
 defineProps<{
   pageTitle?: string,
   categoryTitle: string,
+  colorCategoryTitle?: string,
   sectionName?: string,
 }>()
+
+type CategoriesFilter = {
+  id: number,
+  name: string
+}
+
+const categoriesKids: CategoriesFilter[] = [
+  {id: 1, name: "Мультфильмы"},
+  {id: 2, name: "Видеоигры"},
+  {id: 3, name: "Животные"},
+  {id: 4, name: "Природа"},
+  {id: 5, name: "Все"},
+]
 
 </script>
 
 <template>
   <section class="categories" :class="sectionName">
     <div class="section-container">
-      <h1 class="categories-title" v-if="pageTitle !== ''">
+      <h1 class="categories-title">
         {{ pageTitle }}
       </h1>
       <div class="categories-which">
-        <h2 class="categories-name">
+        <h2 class="categories-name" :class="colorCategoryTitle">
           {{ categoryTitle }}
         </h2>
         <div class="categories-tags">
@@ -61,6 +75,12 @@ defineProps<{
     font: 500 36px/44px 'Inter';
     color: #5C25C5;
 
+    &.green {
+      color: #136C31;
+    }
+    &.blue {
+      color: #2552C5;
+    }
   }
 
   &-tags {

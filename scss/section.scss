@@ -13,6 +13,26 @@
     padding: 100px 0 150px;
   }
 
+  &-green{
+    background-image: url("/background/green.png");
+    background-size: 100% 100%;
+    padding: 366px 0 239px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-blue{
+    background-image: url("/background/blue.png");
+    background-size: 100% 100%;
+    padding: 110px 0 279px;
+    position: relative;
+    margin-top: -110px;
+  }
+
+  &-educational{
+    padding: 0 0 30px;
+  }
+
   &-container {
     max-width: 1310px;
     width: 100%;
